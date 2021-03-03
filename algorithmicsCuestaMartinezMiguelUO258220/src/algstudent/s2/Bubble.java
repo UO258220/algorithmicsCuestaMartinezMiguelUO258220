@@ -24,4 +24,3 @@ public class Bubble extends Vector {
 		return "Bubble";
 	} 
 } 
-
