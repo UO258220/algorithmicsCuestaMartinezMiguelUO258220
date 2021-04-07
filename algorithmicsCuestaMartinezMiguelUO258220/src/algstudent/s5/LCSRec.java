@@ -22,7 +22,6 @@ public class LCSRec {
 	 * Find a MSC directly by a recursive approach 
 	 */
 	public String findLongestSubseq(String s1, String s2){
-		// TODO: find directly a MSC (without a table) of two input sequences using recursion
 		String msc = "";
 		if (s1.charAt(0) == s2.charAt(0)) {
 			msc += s1.charAt(0);
