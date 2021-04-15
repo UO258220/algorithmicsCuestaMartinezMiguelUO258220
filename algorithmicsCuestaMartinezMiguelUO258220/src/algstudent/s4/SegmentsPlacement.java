@@ -19,8 +19,8 @@ public class SegmentsPlacement {
 	}
 
 	public void run() {
-//		greedy1();
-//		greedy2();
+		greedy1();
+		greedy2();
 		greedy3();
 	}
 
@@ -78,16 +78,16 @@ public class SegmentsPlacement {
 
 	private void greedy3() {
 		this.copy = new LinkedList<>(segments); // O(n)
-//		System.out.println("Solving game of size " + copy.poll() + " with Greedy 3");
-//		System.out.println("Cost of greedy 3 = " + solve3(0) + "pufosos");
+		System.out.println("Solving game of size " + copy.poll() + " with Greedy 3");
+		System.out.println("Cost of greedy 3 = " + solve3(0) + "pufosos");
 	}
 
 	private double solve3(int currentPoint) {
 		if (copy.size() > 0) {
 			int newPoint = currentPoint + findMin(copy);
-//			System.out.print("(" + currentPoint + " to " + newPoint + "), ");
+			System.out.print("(" + currentPoint + " to " + newPoint + "), ");
 			double addedPufosos = (double) (currentPoint + newPoint) / 2;
-//			System.out.println("midpoint = " + addedPufosos);
+			System.out.println("midpoint = " + addedPufosos);
 			return addedPufosos + solve3(newPoint);
 		}
 		return 0;
