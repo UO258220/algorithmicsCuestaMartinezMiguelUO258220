@@ -28,7 +28,6 @@ public class SegmentsPlacementTimes {
 			t2 = System.currentTimeMillis();
 
 			System.err.println(String.format("SIZE = %d **  TIME = %d ms  NTIMES = %d", n, t2 - t1, nTimes));
-
 		}
 	}
 

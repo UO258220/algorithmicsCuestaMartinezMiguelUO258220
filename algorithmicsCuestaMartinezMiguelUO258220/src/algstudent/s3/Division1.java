@@ -3,7 +3,7 @@ package algstudent.s3;
 /* Params: a=1;b=3;k=1
  * The time complexity is O(n) 
  * and the waste of stack is O(log n)
- * Regardless the growth of n => the stack does not overflow 
+ * Regardless of the growth of n => the stack does not overflow 
  */
 public class Division1 {
 	public static long rec1 (int n) { 

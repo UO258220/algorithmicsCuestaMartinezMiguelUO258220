@@ -36,4 +36,9 @@ public class Song {
 		return score;
 	}
 
+	@Override
+	public String toString() {
+		return "Song [id=" + id + ", seconds=" + seconds + ", score=" + score + "]";
+	}
+
 }
