@@ -85,7 +85,12 @@ public class SongListNode extends Node {
 
 	@Override
 	public String toString() {
-		return "ID:" + getID() + " - Heuristic of the state: " + getHeuristicValue();
+		return "ID:" + getID() + " - Heuristic: " + getHeuristicValue() + " - Depth: " + getDepth();
+	}
+	
+	@Override
+	public int initialValuePruneLimit() {
+		return 1;
 	}
 
 }
