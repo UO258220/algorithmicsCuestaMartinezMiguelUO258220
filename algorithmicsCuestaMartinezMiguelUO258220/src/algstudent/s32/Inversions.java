@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+// a1
 public class Inversions {
 
 	private List<Integer> ranking;
